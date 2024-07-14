@@ -1,0 +1,58 @@
+.main-header nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-weight: 600;
+}
+
+.main-header nav ul {
+    margin: 0;
+    padding: 0.5rem;
+    cursor: pointer;
+    list-style-type: square;
+}
+
+.link {
+    padding-right: 2rem;
+
+}
+
+.vertical-menu {
+    font-size: 24px;
+    padding: 2rem 8rem 0 4rem;
+    border-right: 1px solid #30110D;
+}
+
+.vertical-menu nav {
+    font-size: 20px;
+}
+
+.vertical-menu nav li {
+    list-style-type: none;
+    padding-top: 1rem;
+    font-weight: 600;
+}
+
+.vertical-menu nav li a {
+    text-decoration: none;
+    color: #30110D;
+}
+
+a::before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 25px;
+    margin-left: 7px;
+
+}
+
+.active::before {
+    background-color: #30110D;
+    vertical-align: middle;
+    margin: 0.4rem;
+}
+
+a {
+    position:relative;
+}

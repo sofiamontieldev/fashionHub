@@ -1,0 +1,7 @@
+.main-header {
+    border-bottom: solid #30110D 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 0 3rem 0 3rem;
+}

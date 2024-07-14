@@ -1,0 +1,16 @@
+footer {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.6rem;
+    border-top: 1px solid #30110D;
+    align-items: center;
+}
+
+.payments {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
