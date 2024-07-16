@@ -38,19 +38,14 @@
     color: #30110D;
 }
 
-a::before {
+.active::before {
     content: "";
     display: inline-block;
     width: 7px;
     height: 25px;
-    margin-left: 7px;
-
-}
-
-.active::before {
+    margin-right: 7px;
     background-color: #30110D;
     vertical-align: middle;
-    margin: 0.4rem;
 }
 
 a {

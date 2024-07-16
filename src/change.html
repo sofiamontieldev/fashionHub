@@ -29,7 +29,7 @@
         <aside class="vertical-menu">
             <h2>Mi cuenta</h2>
             <nav>
-                <li><a class="active" href="">Datos personales</a></li>
+                <li><a class="active" href="../src/index.html">Datos personales</a></li>
                 <li><a href="">Pedidos</a></li>
                 <li><a href="">Crear tienda</a></li>
                 <li><a href="">Soporte</a></li>
@@ -47,7 +47,14 @@
                         <label for="phoneNumber" class="label">Teléfono/Móvil</label>
                         <input type="tel" id="phoneNumber" name="phoneNumber">
                         <label for="date" class="label">Fecha de Nacimiento</label>
-                        <span>DD/MM/AAAA</span>
+                        <div class="dateDropDown">
+                            <select name="date" id="dayDropDown">
+                            </select>
+                            <select name="date" id="monthDropDown">
+                            </select>
+                            <select name="date" id="yearDropDown">
+                            </select>
+                        </div>
                     </div>
                     <div>
                         <label for="lastName" class="label">Apellidos</label>
@@ -60,10 +67,16 @@
                         </select>
                     </div>
                 </div>
-                <a href="./saved.html"><button class="button">GUARDAR</button></a>
+                <div class="btn-section">
+                    <a class="button" href="./update.html">
+                        GUARDAR
+                    </a>
+                </div>
             </section>
             <div class="delete-button">
-                <a href=""><button class="button">ELIMINAR CUENTA</button></a>
+                <a class="button" data-micromodal-trigger="modal-1">
+                    ELIMINAR CUENTA
+                </a>
             </div>
             </section>
         </main>
@@ -80,6 +93,51 @@
         <span>Política de privacidad y tratamiento de datos
             Términos y condiciones</span>
     </footer>
+
+    <div class="modal micromodal-slide" id="modal-1" data-micromodal-trigger="modal-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                    
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-1-content">
+                    <i class="material-symbols-outlined" id="warning";>warning</i>
+                    <h2 class="modal__title" id="modal-1-title">
+                        ¿Está seguro de que quiere eliminar su cuenta?
+                    </h2>
+                </main>
+                <footer class="modal__footer">
+                    <button class="modal__btn modal__btn-primary" data-micromodal-trigger="modal-2"
+                        data-micromodal-close="modal-1">Confirmar</button>
+                    <button class="modal__btn" data-micromodal-close
+                        aria-label="Close this dialog window">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal micromodal-slide" id="modal-2" data-micromodal-trigger="modal-2" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-1-content">
+                    <h2 class="modal__title" id="modal-1-title">Se eliminó correctamente</h2>
+                </main>
+                <footer class="modal__footer">
+                    <button class="modal__btn" data-micromodal-close
+                        aria-label="Close this dialog window">Close</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+
 </body>
+<script src="../public/js/calendar.js"></script>
+<script src="https://unpkg.com/micromodal@0.4.0/dist/micromodal.min.js"></script>
+<script src="../public/js/modal.js"></script>
 
 </html>

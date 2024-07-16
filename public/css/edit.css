@@ -1,28 +1,39 @@
-input[type="text"], input[type="email"], input[type="tel"], input[type="lastName"] {
+input {
     border: 1px solid #30110D;
     background-color: white;
-    padding: 2px 10px;
+    padding: 4px 10px;
     color: #30110D;
     outline: auto;
 }
 
-.information-box select {
-    margin: 0.7rem 0 0 2rem;
+.information-box_form select {
     border: 2px solid #30110D;
     border-radius: 5px;
     padding: 2px 10px;
     font-family: 'open-sauce-light';
     font-weight: 400;
-    background-color: white;
+    background-color: transparent;
     color: #30110D;
     display: inline-block;
+    color: rgba(0, 0, 0, 0.5);
 }
 
+.label {
+    font-weight: 600;
+    font-size: 14px;
+}
 
+input, select {
+    margin: 1.5rem 0rem 0 2rem;
+}
 
+.dateDropDown {
+    display: flex;
+    flex-direction: row;
 
+}
 
-/* Esta parte no está funcionando, quiero cambiarle la opacidad al texto. 
-select option {
-    opacity: 0.5;
+.dateDropDown span {
+    padding: 0;
+
 }
